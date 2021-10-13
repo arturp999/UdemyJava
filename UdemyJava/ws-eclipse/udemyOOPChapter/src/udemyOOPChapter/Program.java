@@ -26,8 +26,10 @@ public class Program {
 		t2.tB = sc.nextDouble();
 		t2.tC = sc.nextDouble();
 		
-		double areaT1 = TriangleArea(t1.tA,t1.tB,t1.tC);
-		double areaT2 = TriangleArea(t2.tA,t2.tB,t2.tC);
+		double areaT1 = t1.TriangleArea();
+		double areaT2 = t2.TriangleArea();
+		System.out.printf("Area do T1 %.2f%n" , areaT1);
+		System.out.printf("Area do T2 %.2f%n" , areaT2);
 		
 		if(areaT1 > areaT2) {
 			System.out.println("T1 IS BIGGER");
@@ -37,11 +39,6 @@ public class Program {
 		
 	}
 	
-	public static double TriangleArea(double tA, double tB, double tC) {
-		double p = (tA - + tB + tC) / 2.0;
-		double areaX = Math.sqrt(p * (p - tA) * (p - tB)* (p - tC));
-		return areaX;
-	}
 	
 	
 }

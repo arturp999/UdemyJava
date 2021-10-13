@@ -28,8 +28,15 @@ public class Main {
 		// Chapter5.C5_Ex5();
 		// Chapter5.C5_Ex6();
 		// Chapter5.C5_Ex7();
-		 Chapter5.C5_Ex8();
-
+		// Chapter5.C5_Ex8();
+		
+		//testing.Ex1();
+		//testing.Ex2();
+		//testing.Ex3();
+		//testing.Ex4();
+		//testing.Ex5();
+		//testing.Ex6();
+		testing.Ex7();
 		sc.close();
 	}
 

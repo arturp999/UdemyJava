@@ -10,10 +10,22 @@ public class Program {
 		
 		//BiggerTrianglee();
 		//rectangule();
-		employee();
-		
+		//employee();
+		student();
 		sc.close();
 	}
+	
+	public static void student() {
+		Student s = new Student();
+		s.name = sc.nextLine();
+		s.firstQuarter = sc.nextDouble();
+		s.secondQuarter = sc.nextDouble();
+		s.thirdQuarter = sc.nextDouble();
+		
+		System.out.println("FINAL GRADE = " + s.finalGrade());
+		s.verifyPass();
+	}
+	
 	public static void employee() {
 		Employee e = new Employee();
 		e.name = sc.nextLine();
@@ -29,7 +41,6 @@ public class Program {
 		
 	}
 
-	
 	public static void BiggerTrianglee() {
 		Triangle t1 = new Triangle();
 		Triangle t2 = new Triangle();

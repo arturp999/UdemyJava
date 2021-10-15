@@ -1,14 +1,32 @@
 package udemyOOPChapter;
 
+import java.util.Locale;
 import java.util.Scanner;
 
 public class Program {
 	public static Scanner sc = new Scanner(System.in);
-	
 	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
 		
-		BiggerTrianglee();
+		//BiggerTrianglee();
+		//rectangule();
+		employee();
+		
 		sc.close();
+	}
+	public static void employee() {
+		Employee e = new Employee();
+		e.name = sc.nextLine();
+		e.grossSalary = sc.nextDouble();
+		e.tax = sc.nextDouble();
+		
+		System.out.println(e.toString());
+		System.out.print("Which percentage to increase salary? ");
+		double percentage = sc.nextDouble();
+		//System.out.println("Updated data: " + e.name + ", € " + String.format("%.2f",  e.increaseSalary(percentage)));
+		System.out.print("Updated data: " + e.name + ", € ");
+		e.increaseSalaryV(percentage);
+		
 	}
 
 	
@@ -39,6 +57,15 @@ public class Program {
 		
 	}
 	
-	
-	
+	public static void rectangule() {
+		Rectangle r = new Rectangle();
+		
+		System.out.println("Enter rectangle width and height");
+		r.width = sc.nextDouble();
+		r.height = sc.nextDouble();
+		
+		
+		System.out.println(r.toString());
+		
+	}
 }
